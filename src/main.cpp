@@ -34,7 +34,7 @@ void sendDataBit(int data_bit, int com) {
         bangBit(0);
         bangBit(0);
 
-        for (k = 1; k <= 4; k++) {
+        for (k = 4; k >= 1; k--) {
             bangBit(com == j && k == com);
             /*Serial.print("Sending COM #");
             Serial.print(k);
